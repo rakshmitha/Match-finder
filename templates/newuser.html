@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='main.css') }}"
+        />
+        <title>Inserting to DB</title>
+    </head>
+    <body>
+        <script>
+            function myFunction() {
+              alert("submitted Successfully")
+            }
+            </script>
+            
+        <div class="container">
+            <div>
+                <h1>Enter data to be inserted</h1>
+                <form method="POST" action="/insert" enctype="multipart/form-data">
+                    <!--Id : <input class="form-control" type="number" name="id" /> -->
+                    Name : <input class="form-control" type="text" name="name" />
+                    <br />
+                    Gender: <input class="form-control" type="text" name="gender" />
+                    <br />
+                    Age : <input class="form-control" type="number" name="age" />
+                    <br />
+                    Income :<select  class="form-control" name="income" >
+                        <option value="20">Below 20</option>
+                        <option value="35">21 to 40</option>
+                        <option value="60">41 to 60</option>
+                        <option value="95">Above 60</option>
+                      </select>
+                    <br />
+                    Race : <select  class="form-control" name="race" >
+                        <option value="20">South-Asian</option>
+                        <option value="40">Chinese</option>
+                        <option value="60">Latin American</option>
+                        <option value="80">Filipino</option>
+                        <option value="90">Other</option>
+                      </select>
+                    <br />
+                    
+
+                    <input class="btn btn-primary" type="submit" onclick="myFunction()"/>
+                    <br>
+                </form>
+            </div>
+        </div>
+
+        <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+    <!--
+        Education : <input class="form-control" type="number" name="education" />
+                    <br />
+                    Physical attractiveness : <input class="form-control" type="number" name="physical-attractiveness" />
+                    <br />
+                    Bio-chemistry : <input class="form-control" type="number" name="bio-chemistry" />
+                    <br />
+                    Core-values : <input class="form-control" type="number" name="corevalues" />
+                    <br />
+                    Life_stage : <input class="form-control" type="number" name="life-stage" />
+                    <br />
+                    Mutual_selection : <input class="form-control" type="number" name="mutual-selection" />
+                    <br />
+                    Life_orientation: <input class="form-control" type="number" name="life-orientation" />
+                    <br />
+                    Financial_security  : <input class="form-control" type="number" name="financial-security" />
+                    <br />
+                    Healthy_living : <input class="form-control" type="number" name="healthy-living" />
+                    <br />
+                    Emotional_outlook : <input class="form-control" type="number" name="emotional-learning" />
+                    <br />
+                    Continuous_learning : <input class="form-control" type="number" name="continuous_learning" />
+                    <br />
+                    Behavior_pattern : <input class="form-control" type="number" name="Behavior_pattern" />
+                    <br />
+                    Interpersonal_skills : <input class="form-control" type="number" name="Interpersonal_skills" />
+                    <br />
+                    Commitment_level: <input class="form-control" type="number" name="Commitment_level" />
+                    <br />
+                    Psychological_cost  : <input class="form-control" type="number" name="Psychological_cost" />
+                    <br />
+
+    -->
+</html>
